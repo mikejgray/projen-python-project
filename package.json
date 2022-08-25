@@ -1,8 +1,9 @@
 {
   "name": "projen-python-project",
+  "description": "Mike's preferred Python project settings",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mgray/projen-python-project.git"
+    "url": "https://github.com/mikejgray/projen-python-project.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -13,7 +14,6 @@
     "default": "npx projen default",
     "docgen": "npx projen docgen",
     "eject": "npx projen eject",
-    "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:js": "npx projen package:js",
@@ -31,26 +31,21 @@
   },
   "author": {
     "name": "Mike Gray",
-    "email": "mgray@2ndwatch.com",
+    "email": "mike@graywind.org",
     "organization": false
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/jest": "^27",
     "@types/node": "^14",
-    "@typescript-eslint/eslint-plugin": "^5",
-    "@typescript-eslint/parser": "^5",
-    "eslint": "^8",
-    "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^3.5.0",
-    "eslint-plugin-import": "^2.26.0",
     "jest": "^27",
     "jest-junit": "^13",
     "jsii": "^1.65.0",
     "jsii-diff": "^1.65.0",
     "jsii-docgen": "^7.0.72",
     "jsii-pacmak": "^1.65.0",
-    "json-schema": "^0.4.0",
     "npm-check-updates": "^15",
+    "prettier": "^2.7.1",
     "projen": "^0.61.27",
     "standard-version": "^9",
     "ts-jest": "^27",

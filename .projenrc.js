@@ -1,14 +1,18 @@
-const { cdk } = require('projen');
+const {
+  cdk
+} = require('projen');
+
 const project = new cdk.JsiiProject({
   author: 'Mike Gray',
-  authorAddress: 'mgray@2ndwatch.com',
+  authorAddress: 'mike@graywind.org',
   defaultReleaseBranch: 'main',
   name: 'projen-python-project',
-  repositoryUrl: 'https://github.com/mgray/projen-python-project.git',
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  repositoryUrl: 'https://github.com/mikejgray/projen-python-project.git',
+  description: "Mike's preferred Python project settings",
+  gitignore: [".DS_Store", ".idea/"],
+  eslint: false,
+  prettier: true,
+  devDeps: ["@types/fs-extra"]
 });
+
 project.synth();
